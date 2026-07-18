@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavasecco Niki | Cremona</title>
+    <meta name="description" content="Lavanderia, lavasecco, sartoria e vendita detersivi a Cremona. Qualità e cura per i tuoi capi.">
+    
+    <!-- Tailwind CSS per il design con estensione dei colori -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'niki-viola': '#a35bc6',
+                        'niki-fucsia': '#c07ad9',
+                        'niki-azzurro': '#dff4fb'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Scorrimento fluido quando si clicca sul menu */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- BARRA DI NAVIGAZIONE -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="/Lavasecco/logo2.png" alt="Lavasecco Niki" class="h-10 w-auto">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#servizi" class="text-gray-600 hover:text-niki-fucsia font-medium">Servizi</a>
+                    <a href="#recensioni" class="text-gray-600 hover:text-niki-fucsia font-medium">Recensioni</a>
+                    <a href="#contatti" class="text-gray-600 hover:text-niki-fucsia font-medium">Contatti</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEZIONE HERO (Iniziale) -->
+    <header class="relative pt-16 flex items-center justify-center min-h-screen overflow-hidden bg-niki-azzurro">
+        <video autoplay muted loop playsinline class="absolute inset-0 h-full w-full object-cover opacity-40">
+            <source src="/Lavasecco/video-pubblicita.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-white/25 via-niki-azzurro/28 to-white/48"></div>
+        <div class="relative z-10 text-center px-4 flex flex-col items-center">
+            <img src="/Lavasecco/logo2.png" alt="Logo Lavasecco Niki" class="mx-auto mt-10 md:mt-14 mb-3 w-72 sm:w-80 md:w-96 lg:w-[30rem] max-h-48 sm:max-h-52 md:max-h-56 h-auto object-contain" style="filter: drop-shadow(0 0 12px rgba(255,255,255,0.98)) drop-shadow(0 0 28px rgba(255,255,255,0.72));">
+            
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 text-niki-viola">La cura perfetta per i tuoi capi</h1>
+            <p class="text-xl md:text-2xl mb-5 text-gray-700">Lavanderia, Sartoria e molto altro a Cremona.</p>
+            <a href="#contatti" class="relative z-20 mt-2 inline-block bg-niki-fucsia hover:bg-magenta-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Vieni a trovarci</a>
+        </div>
+    </header>
+
+    <!-- SEZIONE SERVIZI -->
+    <section id="servizi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-niki-viola mb-12">I Nostri Servizi</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
+                <article class="group overflow-hidden rounded-2xl border-4 border-niki-viola bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="aspect-[5/4] overflow-hidden bg-gray-100">
+                        <img src="/Lavasecco/lavanderia.jpg" alt="Lavanderia e lavasecco" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-niki-viola mb-2">Lavanderia e Lavasecco</h3>
+                        <p class="text-gray-600">Pulizia profonda e delicata per ogni tipo di tessuto, dall'abbigliamento quotidiano ai capi eleganti.</p>
+                    </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-2xl border-4 border-niki-viola bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="aspect-[5/4] overflow-hidden bg-gray-100">
+                        <img src="/Lavasecco/piumoni.jpg" alt="Piumoni sottovuoto" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-niki-viola mb-2">Piumoni Sottovuoto</h3>
+                        <p class="text-gray-600">Lavaggio e confezionamento sottovuoto per tenere i piumoni puliti, protetti e compatti.</p>
+                    </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-2xl border-4 border-niki-viola bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="aspect-[5/4] overflow-hidden bg-gray-100">
+                        <img src="/Lavasecco/sartoria.jpg" alt="Riparazioni sartoriali" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-niki-viola mb-2">Riparazioni Sartoriali</h3>
+                        <p class="text-gray-600">Orli, cambi zip, rammendi e creazioni sartoriali su misura per dare nuova vita ai tuoi abiti.</p>
+                    </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-2xl border-4 border-niki-viola bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="aspect-[5/4] overflow-hidden bg-gray-100">
+                        <img src="/Lavasecco/detersivi.jpg" alt="Detersivi e profumi" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-niki-viola mb-2">Detersivi e Profumi</h3>
+                        <p class="text-gray-600">Selezione di detersivi e profumi per il bucato, pensata per la cura quotidiana della casa.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERIA -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-niki-viola mb-3">Il nostro lavoro</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Lavanderia e sartoria raccontate attraverso le immagini del nostro lavoro quotidiano.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+                <article class="group overflow-hidden rounded-2xl border-4 border-niki-viola bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="aspect-[5/4] overflow-hidden bg-gray-100">
+                        <img src="/Lavasecco/lavanderia.jpg" alt="Lavanderia" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 text-left">
+                        <h3 class="text-2xl font-bold text-niki-viola mb-2">Lavanderia</h3>
+                        <p class="text-gray-600">Cura dei capi, pulizia accurata e attenzione ai dettagli in ogni fase del lavaggio.</p>
+                    </div>
+                </article>
+
+                <article class="group overflow-hidden rounded-2xl border-4 border-niki-viola bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                    <div class="aspect-[5/4] overflow-hidden bg-gray-100">
+                        <img src="/Lavasecco/sartoria.jpg" alt="Sartoria" class="h-full w-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-6 text-left">
+                        <h3 class="text-2xl font-bold text-niki-viola mb-2">Sartoria</h3>
+                        <p class="text-gray-600">Riparazioni, modifiche e lavorazioni sartoriali per dare nuova vita ai tuoi capi.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE RECENSIONI -->
+    <section id="recensioni" class="py-20 bg-niki-viola text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Cosa dicono di noi</h2>
+            <p class="mb-10 text-white/85 text-lg">4,8/5 su 22 recensioni</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <article class="bg-niki-viola/80 p-6 rounded-2xl border border-white/20 shadow-sm">
+                    <p class="italic text-base leading-relaxed text-white/90">“Attenzione al cliente, prezzi giusti, servizio lavanderia curato, personale gentile e sempre sorridente. Riparazioni sartoriali di <strong>qualità</strong>.”</p>
+                    <div class="mt-4 flex items-center justify-between gap-3">
+                        <p class="font-bold">Fabrizio</p>
+                        <p class="text-amber-300 font-semibold">★★★★★</p>
+                    </div>
+                </article>
+
+                <article class="bg-niki-viola/80 p-6 rounded-2xl border border-white/20 shadow-sm">
+                    <p class="italic text-base leading-relaxed text-white/90">“Personale gentile ed accogliente, lavori di <strong>sartoria</strong> ottimi.”</p>
+                    <div class="mt-4 flex items-center justify-between gap-3">
+                        <p class="font-bold">Nora</p>
+                        <p class="text-amber-300 font-semibold">★★★★★</p>
+                    </div>
+                </article>
+
+                <article class="bg-niki-viola/80 p-6 rounded-2xl border border-white/20 shadow-sm">
+                    <p class="italic text-base leading-relaxed text-white/90">“Molto seria, gentile e professionale, e dà ottimi consigli!”</p>
+                    <div class="mt-4 flex items-center justify-between gap-3">
+                        <p class="font-bold">Paola</p>
+                        <p class="text-amber-300 font-semibold">★★★★☆</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="mt-8">
+                <a href="https://maps.app.goo.gl/cNju29z764aXwDha6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-full bg-white px-6 py-3 font-semibold text-niki-viola transition hover:bg-niki-azzurro">
+                    Leggi le altre recensioni su Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOVE SIAMO E CONTATTI -->
+    <section id="contatti" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-niki-viola text-center mb-12">Vieni a trovarci</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Informazioni Contatto -->
+                <div class="lg:w-1/3 space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-niki-viola"><i class="fas fa-map-marker-alt text-niki-fucsia mr-2"></i> Indirizzo</h3>
+                        <p class="text-gray-600">Via Brescia 40<br>26100 Cremona (CR)</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-niki-viola"><i class="fas fa-clock text-niki-fucsia mr-2"></i> Orari</h3>
+                        <p class="text-gray-600">Lun - Ven: 08:30 - 12:00 / 14:30 - 19:00<br>Sabato: 08:30 - 12:30<br>Domenica: Chiuso</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 text-niki-viola"><i class="fas fa-phone text-niki-fucsia mr-2"></i> Contatti</h3>
+                        <p class="text-gray-600 underline">Tel: 320 013 3425</p>
+                    </div>
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <a href="tel:+393200133425" class="inline-flex items-center rounded-full bg-niki-viola px-5 py-3 text-sm font-semibold text-white transition hover:bg-niki-fucsia">
+                            Chiama ora
+                        </a>
+                        <a href="https://wa.me/393200133425" class="inline-flex items-center rounded-full border border-niki-viola px-5 py-3 text-sm font-semibold text-niki-viola transition hover:bg-niki-azzurro">
+                            WhatsApp
+                        </a>
+                    </div>
+                    <!-- Social personalizzati con colore niki-fucsia -->
+                    <div class="pt-4 flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-niki-fucsia text-3xl transition" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-niki-fucsia text-3xl transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/393200133425" class="text-gray-400 hover:text-green-500 text-3xl transition" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Mappa Google -->
+                <div class="lg:w-2/3 h-80 rounded-xl overflow-hidden shadow-md border-4 border-niki-azzurro">
+                    <iframe src="https://www.google.com/maps?q=Via+Brescia+40+26100+Cremona&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-niki-viola text-gray-200 py-8 text-center">
+        <p>&copy; 2026 Lavasecco Niki. Tutti i diritti riservati. P.IVA 12345678901</p>
+        <p class="text-xs mt-2">Design personalizzato basato sulla vostra insegna</p>
+    </footer>
+
+</body>
+</html>
